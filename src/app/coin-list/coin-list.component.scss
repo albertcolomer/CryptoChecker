@@ -92,6 +92,7 @@ th {
 
 :host ::ng-deep tr.mat-header-row {
     background-color: #4a055f;
+    font-size: 12px;
 }
 
 :host ::ng-deep tr.mat-row {
@@ -105,3 +106,20 @@ th {
         }
     }
 }
+
+@media (max-width: 600px) {
+    .card {
+        img {
+            width: 40px;
+            margin: 0 auto;
+        }
+    }
+    td{
+        img{
+            width: 30px;
+        }
+    }
+    .mat-cell, .mat-footer-cell {
+        font-size: 10px;
+    }
+  }
